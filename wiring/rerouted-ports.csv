@@ -1,0 +1,8 @@
+"Connection Label",Function
+THB,"Bed Thermistor"
+CAN,"Toolhead Communication"
+"ADC IN(Fil-Det)","Filament Sensor"
+"Motor Outputs (X,Y,Z)","Stepper Motors"
+X-stop,"X-axis endstop switch"
+Y-stop,"Y-axis endstop switch"
+"Power In","Main power connection"
