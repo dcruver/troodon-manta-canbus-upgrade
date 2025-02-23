@@ -85,5 +85,5 @@ The wiring process involves:
 ## Related Links
 + [BTT Manta M8P Documentation](https://github.com/bigtreetech/Manta-M8P)
 + [BTT SB2209/SB2240 Toolhead](https://github.com/bigtreetech/EBB)
-+ BTT Smart Filament Sensor
++ [BTT Smart Filament Sensor](https://github.com/bigtreetech/smart-filament-detection-module)
 + [BTT Eddy Duo Probe](https://github.com/bigtreetech/Eddy)
