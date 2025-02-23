@@ -1,27 +1,45 @@
-# Phase 2: Smart Filament Sensor (SFS) Installation
+# Smart Filament Sensor (SFS 2.0) Upgrade
 
 ## Overview
-This phase installs and configures the **BTT Smart Filament Sensor** for enhanced filament tracking.
+This phase of the upgrade adds the **BTT Smart Filament Sensor (SFS 2.0)** to the **Troodon 2.0 Pro**. The **SFS 2.0** improves filament detection by monitoring both **filament presence** and **extrusion movement**, helping to prevent failed prints.
 
-This process involves:
-- **Choosing a mounting location**
-- **Wiring the sensor to the Manta M8P**
-- **Configuring Klipper for filament detection**
+## Why Upgrade?
+The **original filament sensor** on the **Troodon 2.0 Pro** was a simple switch-based sensor that only detected whether filament was present. The **BTT SFS 2.0**, however, offers:
+- **Runout detection** (detects when filament runs out)
+- **Extrusion detection** (detects if filament is moving properly)
+- **Higher reliability** compared to basic sensors
 
----
+## Wiring
 
-## **1️⃣ Mount the Smart Filament Sensor**
-✅ **Decide between toolhead-mounted or rear-mounted setup**  
-✅ **Modify the mount if needed**  
+The **Manta M8P** has a dedicated **Fil-DET (ADC IN) port**, allowing for a direct **4-pin connection** to the **SFS 2.0** without additional modifications.
 
-## **2️⃣ Wire the Sensor to the Manta M8P**
-✅ **Connect to `ADC IN (Fil-DET)`**  
+| SFS 2.0 Wire | Manta M8P Pin |
+|-------------|-------------|
+| **Red (5V)** | **5V (Fil-DET Port)** |
+| **Black (GND)** | **GND (Fil-DET Port)** |
+| **Blue (Switch Sensor)** | **PF0 (Fil-DET Port)** |
+| **Green (Motion Sensor)** | **PC15 (Fil-DET Port)** |
 
-## **3️⃣ Update Firmware & Test**
-✅ **Modify Klipper configuration**  
-✅ **Ensure the sensor detects runout properly**  
+Since the **SFS 2.0** can be plugged directly into the **Fil-DET (ADC IN) port**, there is no need for split cables or custom wiring.
 
----
+## Mounting
+The **Smart Filament Sensor** will be mounted near the filament path, ideally at the **rear of the printer** in place of the existing runout sensor.
 
-## Next Steps
-After this phase, proceed to **[Phase 3: Eddy Duo Probe Installation](../eddy-probe/eddy-probe-install.md)**.
+## Firmware Configuration
+To enable the **Smart Filament Sensor (SFS 2.0)** in **Klipper**, add the following configuration:
+
+```ini
+[filament_motion_sensor SFS]
+detection_mode: runout
+switch_pin: PF0
+motion_pin: PC15
+pause_on_runout: True
+runout_gcode: M600
+extruder: extruder
+```
+
+## Summary
+- The **Manta M8P** has a **dedicated Fil-DET (ADC IN) port**, making wiring simple.
+- The **SFS 2.0** connects directly to this port with a 4-pin connection.
+- The **SFS 2.0** will be mounted near the filament path.
+- **Klipper configuration** is straightforward, using **PF0 for runout detection** and **PC15 for extrusion movement detection**.

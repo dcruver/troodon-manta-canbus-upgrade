@@ -1,8 +1,3 @@
-"Connection Label",Function
-THB,"Bed Thermistor"
-CAN,"Toolhead Communication"
-"ADC IN(Fil-Det)","Filament Sensor"
-"Motor Outputs (X,Y,Z)","Stepper Motors"
-X-stop,"X-axis endstop switch"
-Y-stop,"Y-axis endstop switch"
-"Power In","Main power connection"
+Original Pin,New Connection (Manta M8P),Connector Type
+Fil-DET,PF0 (Switch Sensor),JST-XH 4-Pin
+Fil-DET GND,PC15 (Motion Sensor),JST-XH 4-Pin

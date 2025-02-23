@@ -11,34 +11,34 @@ This process involves:
 
 ---
 
-## **1️⃣ Backup & Prepare for Disassembly**
-✅ **Backup Klipper Configuration** (printer.cfg)  
-✅ **Document existing wiring**  
-✅ **Ensure a stable work area**  
+## **Backup & Prepare for Disassembly**
++ **Backup Klipper Configuration** (printer.cfg)  
++ **Document existing wiring**  
++ **Ensure a stable work area**  
 
-## **2️⃣ Remove the Existing Octopus X7 Board**
-✅ **Disconnect all wiring**  
-✅ **Identify the 40-pin connector cables** that need rerouting  
+## **Remove the Existing Octopus X7 Board**
++ **Disconnect all wiring**  
++ **Identify the 40-pin connector cables** that need rerouting  
 
-## **3️⃣ Install the Manta M8P & CB2**
-✅ **Mount the new Manta M8P board**  
-✅ **Adapt the mounting holes if necessary**  
-✅ **Power the CB2 module separately**  
+## **Install the Manta M8P & CB2**
++ **Mount the new Manta M8P board**  
++ **Adapt the mounting holes if necessary**  
++ **Power the CB2 module separately**  
 
-## **4️⃣ Rewire Components to the Manta M8P**
-✅ **Route the motors, sensors, and fans from the 40-pin connector**  
-✅ **Wire the power supply properly**  
-✅ **Connect the CAN Bus toolhead**  
+## **Rewire Components to the Manta M8P**
++ **Route the motors, sensors, and fans from the 40-pin connector**  
++ **Wire the power supply properly**  
++ **Connect the CAN Bus toolhead**  
 
-## **5️⃣ Set Up CAN Bus**
-✅ **Install the SB2209 board on the Stealthburner**  
-✅ **Run the CAN Bus umbilical properly**  
-✅ **Ensure power is properly routed from the PSU**  
+## **Set Up CAN Bus**
++ **Install the SB2209 board on the Stealthburner**  
++ **Run the CAN Bus umbilical properly**  
++ **Ensure power is properly routed from the PSU**  
 
-## **6️⃣ Update & Flash Firmware**
-✅ **Configure Klipper for the Manta M8P and CAN Bus**  
-✅ **Flash firmware to the Manta and CAN board**  
-✅ **Test basic functionality**  
+## **Update & Flash Firmware**
++ **Configure Klipper for the Manta M8P and CAN Bus**  
++ **Flash firmware to the Manta and CAN board**  
++ **Test basic functionality**  
 
 ---
 
