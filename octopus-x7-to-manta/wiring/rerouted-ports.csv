@@ -1,3 +1,5 @@
-Original Pin,New Connection (Manta M8P),Connector Type
-Fil-DET,PF0 (Switch Sensor),JST-XH 4-Pin
-Fil-DET GND,PC15 (Motion Sensor),JST-XH 4-Pin
+Device,Manta M8P V2 Header,Pin,Connector Type,Notes
+SFS 2.0 Switch Sensor,M5-STOP,PF0,JST-XH 3-Pin,"Direct from SFS, not via 40-pin harness"
+SFS 2.0 Motion Sensor,M6-STOP,PC15,JST-XH 3-Pin,"Direct from SFS, not via 40-pin harness"
+Stock Filament Sensor (40-pin PC2),None,None,JST-XH 3-Pin,"REMOVED 2026-10-12 - 3-wire extension pulled out of the harness"
+Y Endstop,M2-STOP,PF3,JST-XH 3-Pin,"Only 2 of 3 pins used"
